@@ -3,13 +3,13 @@ import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyATrTVVB7jKL7wljQRWt5rkLimc8uAjGlI",
-    authDomain: "ehana-9df1d.firebaseapp.com",
-    projectId: "ehana-9df1d",
-    storageBucket: "ehana-9df1d.appspot.com",
-    messagingSenderId: "273780324092",
-    appId: "1:273780324092:web:c17c7451da4683aa338979",
-    measurementId: "G-ZM98GBBPKS"
+    apiKey: "AIzaSyBGKT6AJTIN-thb1k5nU3WTTRjiuQbPRDQ",
+    authDomain: "ehanna-9b620.firebaseapp.com",
+    projectId: "ehanna-9b620",
+    storageBucket: "ehanna-9b620.appspot.com",
+    messagingSenderId: "844558022661",
+    appId: "1:844558022661:web:c0274dffb56047b1aa046c",
+    measurementId: "G-Y70DF9TV38"
 };
 
 if (!firebase.apps.length){
