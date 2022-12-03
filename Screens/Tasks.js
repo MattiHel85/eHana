@@ -66,8 +66,15 @@ const Tasks = () => {
     }
 
     return (
-        <View style={{ flex: 1 }}>
-            <View style={styles.formContainer}>
+        <View style={{
+            backgroundColor: "#35DCD2",
+            height: "100%",
+            paddingTop: "50%"
+          }}>
+            <View 
+                // style={{ backgroundColor:}}
+                style={styles.formContainer}
+            >
                 <TextInput
                     style={styles.input}
                     placeholder='Add new todo'
@@ -78,7 +85,7 @@ const Tasks = () => {
                     autoCapitalize="none"
                 />
                 <TouchableOpacity style={styles.button} onPress={addTodo}>
-                    <Text style={styles.buttonText}>Add</Text>
+                    <Text style={styles.buttonText}>+</Text>
                 </TouchableOpacity>
             </View>
             <FlatList
@@ -113,7 +120,7 @@ const Tasks = () => {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#e5e5e5',
+        backgroundColor: '#F3F3F3',
         padding: 15,
         borderRadius: 15,
         margin: 5,
@@ -136,11 +143,11 @@ const styles = StyleSheet.create({
         height: 80,
         marginLeft: 10,
         marginRight: 10,
-        marginTop: 100
+        marginTop: 10
     },
     input: {
         height: 48,
-        borderRadius: 5,
+        borderRadius: 50,
         overflow: 'hidden',
         backgroundColor: 'white',
         paddingLeft: 16,
@@ -149,14 +156,14 @@ const styles = StyleSheet.create({
     },
     button: {
         height: 47,
-        borderRadius: 5,
-        backgroundColor: '#788eec',
+        borderRadius: 50,
+        backgroundColor: '#F3F3F3',
         width: 80,
         alignItems: "center",
         justifyContent: 'center'
     },
     buttonText: {
-        color: 'white',
+        color: '#35DCD2',
         fontSize: 20
     },
 
@@ -164,6 +171,7 @@ const styles = StyleSheet.create({
         marginTop: 5,
         fontSize: 20,
         marginLeft: 14,
+        color: "#35DCD2"
     },
 });
 

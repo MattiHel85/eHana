@@ -15,14 +15,14 @@ const Home = () => {
       <View style={styles.container}>
         <TouchableOpacity onPress={() => navigation.navigate('Tasks')}>
           <Text style={styles.button}>
-            +add task
+            + ADD TASK
           </Text>
         </TouchableOpacity>
       </View>
       <View style={styles.container}>
         <TouchableOpacity onPress={() => navigation.navigate('About')}>
           <Text style={styles.button}>
-            +about us
+            + ABOUT US
           </Text>
         </TouchableOpacity>
       </View>      
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     width: 150,
     backgroundColor: "#F3F3F3",
     margin: 20,
-    padding: 20,
+    padding: 15,
     textAlign: "center",
     borderRadius: 50,
     fontSize: 18,

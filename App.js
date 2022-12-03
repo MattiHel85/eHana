@@ -22,7 +22,8 @@ const App = () => {
           headerTitleAlign: "center",
           headerTitleStyle: {
             color: "#35DCD2",
-          }
+          },
+          headerTintColor: '#35DCD2'
         }}
       >
         <Stack.Screen
@@ -54,15 +55,30 @@ const App = () => {
           }}
         />
       </Stack.Navigator>
-      <View>
-        <Text>
-          Footer
+      <View style={styles.footer}>
+        <Text style={styles.footerText}>
+          &copy; Matti Simpson, Anna Mayneva, and Christopher Gul {`\n\n`} Laurea UAS 2022
         </Text>
       </View>
     </NavigationContainer>
   );
 
 }
+
+const styles = StyleSheet.create({
+  footer: {
+    backgroundColor: "#F3F3F3",
+    height: "10%",
+    padding: 10,
+  },
+
+  footerText: {
+    color: "#35DCD2",
+    fontSize: 14,
+    fontWeight: "600",
+    textAlign: "center",
+  }
+})
 
 
 export default App

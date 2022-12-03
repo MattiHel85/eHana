@@ -24,18 +24,29 @@ const Detail = ({ route }) => {
     }
 
     return (
-        <View style={styles.container}>
-            <TextInput
-                style={styles.textfield}
-                onChangeText={onChangeHeadingText}
-                value={textHeading}
-                placeholder="write new task name"
-            />
-            <Pressable
-                style={styles.buttonUpdate}
-                onPress={() => { updateTodo() }}>
-                <Text>UPDATE</Text>
-            </Pressable>
+        <View style={{
+            backgroundColor: "#35DCD2",
+            height: "100%"
+        }}>
+            <View style={styles.container}>
+                <TextInput
+                    style={styles.textfield}
+                    onChangeText={onChangeHeadingText}
+                    value={textHeading}
+                    placeholder="New task name"
+                />
+                <Pressable
+                    style={styles.buttonUpdate}
+                    onPress={() => { updateTodo() }}>
+                    <Text 
+                        style={{
+                            color: '#35DCD2',
+                            fontWeight: '700'
+                        }}>
+                            UPDATE
+                    </Text>
+                </Pressable>
+            </View>
         </View>
     )
 }
@@ -45,14 +56,14 @@ const styles = StyleSheet.create({
         marginTop: 80,
         marginLeft: 15,
         marginRight: 15,
+        height: 100,
     },
     textfield: {
         marginBottom: 10,
-        padding: 10,
-        fontSize: 15,
-        color: "#000000",
-        backgroundColor: "#e0e0e0",
-        borderRadius: 5
+        padding: 15,
+        fontSize: 20,
+        backgroundColor: "#F3F3F3",
+        borderRadius: 50
     },
     buttonUpdate: {
         marginTop: 25,
@@ -60,9 +71,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         paddingVertical: 12,
         paddingHorizontal: 32,
-        borderRadius: 4,
+        borderRadius: 50,
         elevation: 10,
-        backgroundColor: '#0de065',
+        backgroundColor: '#F3F3F3',
+        // color: '#35DCD2',
     },
 });
 
